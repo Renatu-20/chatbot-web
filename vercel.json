@@ -1,4 +1,3 @@
-// Configuração do Vercel para deploy da aplicação Next.js
 {
   "version": 2,
   "buildCommand": "npm run build",
