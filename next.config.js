@@ -1,7 +1,6 @@
 // Configuração do Next.js para deploy na Vercel
 module.exports = {
   reactStrictMode: true,
-  swcMinify: true,
   images: {
     domains: ['localhost', 'chatbot-whatsapp.vercel.app'],
     formats: ['image/avif', 'image/webp'],
@@ -9,7 +8,7 @@ module.exports = {
   env: {
     NEXT_PUBLIC_API_URL: process.env.NEXT_PUBLIC_API_URL || 'http://localhost:3000/api',
   },
-  async redirects() {
+  async redirects()  {
     return [
       {
         source: '/',
